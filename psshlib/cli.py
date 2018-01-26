@@ -30,7 +30,7 @@ def common_parser():
             help='hosts file (each line "[user@]host[:port]")')
     parser.add_option('-H', '--host', dest='host_strings', action='append',
             metavar='HOST_STRING',
-            help='additional host entries ("[user@]host[:port]")')
+            help='additional host entries ("[user@]host[[start:stop]][:port]")')
     parser.add_option('-l', '--user', dest='user',
             help='username (OPTIONAL)')
     parser.add_option('-p', '--par', dest='par', type='int',
